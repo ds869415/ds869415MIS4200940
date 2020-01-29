@@ -15,14 +15,14 @@ namespace ds869415MIS4200940.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "My MIS4200 Test message.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Info about me.";
 
             return View();
         }
