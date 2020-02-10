@@ -12,8 +12,8 @@ namespace ds869415MIS4200940.Models
         public int orderNum { get; set; }
         public string description { get; set; }
         public DateTime orderDate { get; set; }
-        public int customerID { get; set; }
-        public virtual Customer customer { get; set; }
+        public int CustomerID { get; set; }
+        public virtual Customer Customer { get; set; }
 
     }
 }

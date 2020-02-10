@@ -15,7 +15,7 @@ namespace ds869415MIS4200940.DAL
         }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Orders> Orders { get; set; }
-        public DbSet<Products> Products { get; set; }
+        public DbSet<Product> Product { get; set; }
         public DbSet<OrderDetail> OrderDetail { get; set; }
 
         // add this method - it will be used later

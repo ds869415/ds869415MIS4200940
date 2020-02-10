@@ -14,9 +14,9 @@ namespace ds869415MIS4200940.Models
         public int orderID { get; set; }
         public virtual Orders order { get; set; }
         // the next two properties link the orderDetail to the Product
-        public int productsID { get; set; }
+        public int productId { get; set; }
 
-        public virtual Products Products { get; set; }
+        public virtual Product Product { get; set; }
     }
 }
 
