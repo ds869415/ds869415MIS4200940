@@ -47,7 +47,7 @@ namespace ds869415MIS4200940.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "vetId,patients")] vet vet)
+        public ActionResult Create([Bind(Include = "vetId,firstName,lastName,yearsWorking,patients")] vet vet)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace ds869415MIS4200940.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "vetId,patients")] vet vet)
+        public ActionResult Edit([Bind(Include = "vetId,firstName,lastName,yearsWorking,patients")] vet vet)
         {
             if (ModelState.IsValid)
             {
