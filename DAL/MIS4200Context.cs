@@ -11,11 +11,18 @@ namespace ds869415MIS4200940.DAL
     {
         public MIS4200Context() : base("name=DefaultConnection")
         {
-            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<MIS4200Context,ds869415MIS4200940.Migrations.MISContext.Configuration>("DefaultConnection"));
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MIS4200Context,ds869415MIS4200940.Migrations.MISContext.Configuration>("DefaultConnection"));
         }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Orders> Orders { get; set; }
         public DbSet<Products> Products { get; set; }
         public DbSet<OrderDetail> OrderDetail { get; set; }
+
+        // add this method - it will be used later
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
+
 }

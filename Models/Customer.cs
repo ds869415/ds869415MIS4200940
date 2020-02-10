@@ -7,14 +7,14 @@ namespace ds869415MIS4200940.Models
 {
     public class Customer
     {
-        public int customerID { get; set; }
-        public string customerLastName { get; set; }
-        public string customerFirstName { get; set; }
-        public string email { get; set; }
-        public string phone { get; set; }
-        public DateTime customerSince { get; set; }
-        public string fullName { 
-            get { return customerLastName + ", " + customerFirstName; }
+        public int CustomerID { get; set; }
+        public string CustomerLastName { get; set; }
+        public string CustomerFirstName { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public DateTime CustomerSince { get; set; }
+        public string FullName { 
+            get { return CustomerLastName + ", " + CustomerFirstName; }
                 }
     }
 }
