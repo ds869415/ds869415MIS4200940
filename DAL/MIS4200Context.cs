@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using ds869415MIS4200940.Models;
 
+
 namespace ds869415MIS4200940.DAL
 {
     public class MIS4200Context : DbContext
@@ -17,6 +18,10 @@ namespace ds869415MIS4200940.DAL
         public DbSet<Orders> Orders { get; set; }
         public DbSet<Product> Product { get; set; }
         public DbSet<OrderDetail> OrderDetail { get; set; }
+
+        public DbSet<Pets> Pets { get; set; }
+
+        public DbSet<vet> Vet { get; set; }
 
         // add this method - it will be used later
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

@@ -1,0 +1,42 @@
+﻿@model ds869415MIS4200940.Models.Pets
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pets</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.vet.vetId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vet.vetId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.petName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.petName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.petsId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
