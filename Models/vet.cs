@@ -31,5 +31,9 @@ namespace ds869415MIS4200940.Models
         [Required(ErrorMessage = "Vet # of Patients Required")]
         public int patients { get; set; }
 
+        public string FullName
+        {
+            get { return lastName + ", " + firstName; }
+        }
     }
 }
